@@ -8,9 +8,7 @@ fn main() {
         eprintln!("Problem parsing arguments: {err}");
         process::exit(1);
     });
-
-    // --snip--
-
+    
     if let Err(e) = minigrep::run(config) {
         eprintln!("Application error: {e}");
         process::exit(1);
